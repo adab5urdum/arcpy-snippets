@@ -1,0 +1,24 @@
+{
+	"arcpy" : {
+		"prefix": "arcpy",	
+		"body": [
+			"import arcpy as ap",
+			"from arcpy import AddMessage as write",
+			"import pandas as pd",
+			"import numpy as np",
+			"import os",
+			"from datetime import datetime as dt",
+			"\n\n\n\n",
+			"def main(argv):",
+			"\tpass",
+			"\n\n",
+			"if __name__=='__main__':",
+			"\tap.env.overwriteOutput = True",
+			"\targv = tuple(ap.GetParameterAsText(i) for i in range(ap.GetArgumentCount()))",
+			"\tnow = dt.now()",
+			"\tmain(*argv)",
+			"\twrite(dt.now() - now)"
+		],
+		"description": "Boilerplate code for ArcPy Toolbox Scripts"
+	}
+}
