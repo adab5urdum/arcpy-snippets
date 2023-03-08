@@ -1,0 +1,21 @@
+// Snippet JSON for arcpy.da.SearchCursor and arcpy.da.UpdateCursors
+
+    "arcpy-search":{
+        "prefix": "ap-search",
+        "body":[
+            "with ap.da.SearchCursor(in_table, fields, query) as scur:",
+            "\tfor srow in scur:",
+            "\t\tpass"        
+            ],
+        "description": "SearchCursor boiler"    
+        },
+        
+    "arcpy-update":{
+        "prefix": "ap-update",
+        "body": [
+            "with ap.da.UpdateCursor(in_table, fields, query) as ucur:",
+            "\tfor urow in ucur:",
+            "\t\tpass"        
+            ],
+        "description": "UpdateCursor boiler"    
+        }
